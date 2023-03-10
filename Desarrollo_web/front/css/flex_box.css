@@ -1,0 +1,26 @@
+*{box-sizing: border-box;
+}
+
+/* body, html{
+    margin: 0;
+    padding: 0;
+} */
+
+div {
+    border: 1px solid black;
+}
+
+.flex-container{
+    /* por defecto se queda en row */
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-content: center;
+}
+
+.flex-item{
+    margin: 5%;
+    flex-shrink: 1;
+    flex-grow: 2;
+}

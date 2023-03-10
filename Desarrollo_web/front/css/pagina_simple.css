@@ -1,0 +1,77 @@
+*{box-sizing: border-box;
+}
+
+body, html{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: sans-serif;
+}
+
+.grid-container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+}
+
+.flex-container{
+    display:flex;
+    align-items: center;
+}
+
+.grid-item{
+    background-color: rgb(240, 255, 253);
+}
+
+
+#grid-header{
+    grid-column: 1 / -1;
+    grid-row: 1 / span 1;
+    background-color: rgb(35, 67, 77);
+    justify-content: space-around;
+}
+
+#grid-content{
+    grid-column: 1 / -1;
+    grid-row: 2 / span 4;
+    background-color:rgb(188,123,43);
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 5%;
+}
+
+#sub{
+    grid-column: 1 / -1;
+    background-color: rgb(35, 67, 77);
+    justify-content: center
+}
+
+#img{
+    display: flex;
+    grid-column: 1 / -1;
+    grid-row: 7 / span 3;
+    background-color: white;
+    color: black;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#footer{
+    grid-column: 1 / -1;
+    background-color: rgb(35, 67, 77);
+    align-content: center;
+    justify-content: center;
+}
+
+#content-buton{
+    background-color: rgb(188,123,43);
+    color: white;
+}

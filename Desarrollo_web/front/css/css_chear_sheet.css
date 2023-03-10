@@ -1,0 +1,104 @@
+#border {
+    border: 0.5rem outset pink;
+    outline: 0.5rem solid khaki;
+    box-shadow: 0 0 0 2rem skyblue;
+    border-radius: 12px;
+    font: bold 1rem sans-serif;
+    margin: 2rem;
+    padding: 1rem;
+    outline-offset: 0.5rem;
+}
+  
+.top {
+    border-top: 4mm ridge rgba(19, 231, 178, 0.6);
+}
+.bot{ 
+    border-bottom: 4mm ridge rgba(19, 231, 178, 0.6);
+ }
+.right{
+    border-right: 4mm ridge rgba(19, 231, 178, 0.6);
+ }
+.left{
+    border-left: 4mm ridge rgba(19, 231, 178, 0.6);
+}
+    
+#rad {
+    border: groove 1em red;  
+    border-radius: 2em;
+    width: 120px;
+}
+
+.image {
+    font-size: 1;
+    color: red;
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    background-image: url("https://media.sketchfab.com/models/8f5e71c1ebe34348b4d0700e02b3eaa7/thumbnails/3d8637919ac541d98bc07eb0786342d9/6b3cfbfa5efb49a69107f19aeb1f9515.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.color {
+    color: purple;
+    font-size: 1.5em;
+}
+
+.style {
+    font-style: italic;
+}
+
+.weight {
+    font-weight: lighter;
+}
+
+.width {
+    width: 100px;
+    background-color: aquamarine;
+}
+
+.height {
+    height: 50px;
+    background-color: aquamarine;
+}
+
+.list {
+    list-style: square;
+}
+
+.margin {
+    margin: 10px;
+    margin: auto;
+    background: lime;
+    width: 66%;
+}
+
+.padding {
+    padding: 10px;
+    background: lime;
+    width: 66%;
+    padding: 110px;
+}
+
+.overflow {
+    width: 150px;
+    height: 100px;
+    overflow: scroll;
+}
+ 
+.display {
+    display: inline;
+    background: #cccccc;
+}
+
+.position {
+    position: relative;
+    top: 50px;
+    left: 50px;
+    background: #df0606;
+}
+
+.filter {
+    filter: drop-shadow(16px 16px 20px rgb(11, 11, 11));
+}
