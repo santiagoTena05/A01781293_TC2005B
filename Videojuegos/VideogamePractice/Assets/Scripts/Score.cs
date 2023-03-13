@@ -7,14 +7,16 @@ Santiago Tena
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class Score : MonoBehaviour
 {
     [SerializeField] TMP_Text tmpObj;
     [SerializeField] int maxScore;
+    [SerializeField] int minScore;
     [SerializeField] CreateBalls creator;
-    int score;
+    public int score;
 
 
     // Start is called before the first frame update
@@ -32,13 +34,23 @@ public class Score : MonoBehaviour
 
         if (score >= maxScore)
         {
-            Finish();
+            // Finish();
+            creator.StopBalls();
+            tmpObj.text = "You win!";
+        }
+
+        if (score <= minScore)
+        {
+            // Finish();
+            creator.StopBalls();
+            tmpObj.text = "Game Over";
         }
     }
 
-    void Finish()
-    {
-        creator.StopBalls();
-        tmpObj.text = "Game Over";
-    }
+
+    // void Finish()
+    // {
+    //     creator.StopBalls();
+    //     tmpObj.text = "Game Over";
+    // }
 }

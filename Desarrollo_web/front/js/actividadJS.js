@@ -45,7 +45,7 @@ function ejercicio4(){
     console.log(ej4Arr.join(' '));
 } 
 
-//Ejercicio 6 Changes char string to 'Hacker Speak'
+//Ejercicio 6 
 function ejercicio6(){
     let ej6 = 'Javascript es padrisimo';
     let ej6Arr = ej6.split('');
@@ -110,11 +110,65 @@ function ejercicio10() {
     console.log(flag);
 }
 
-//Ejercicio 12 
+//Ejercicio 12
+//Mediana y moda de una lista de numeros
+function ejercicio12() 
+{
+    let ej12 = [1, 2, 3, 4, 5, 6, 6, 7, 10, 3, 1, 5, 8, 9, 5, 5, 15, 8,8,8,8,8,8,8,8];
+    let ej12ArrModa = 0;
+    let ej12ArrMediana = 0;
+    let ej12ArrModaCount = 0;
 
-//ejercicio1();
-//ejercicio2();
-//ejercicio4();
-//ejercicio6();
-//ejercicio8();
-//ejercicio10();
+    ej12.sort((a,b) => a - b);//Ordenar el array incluyendo numeros de mas de un digito
+
+    //Mediana
+    if (ej12.length % 2 == 0) {
+        ej12ArrMediana = (ej12[ej12.length / 2] + ej12[(ej12.length / 2) - 1]) / 2;
+    } else {
+        ej12ArrMediana = ej12[Math.floor(ej12.length / 2)];
+    }
+
+    //Moda
+    for (let i = 0; i < ej12.length; i++) {
+        let count = 0;
+        for (let j = 0; j < ej12.length; j++) {
+            if (ej12[i] == ej12[j]) {
+                count++;
+            }
+        }
+        if (count > ej12ArrModaCount) {
+            ej12ArrModaCount = count;
+            ej12ArrModa = ej12[i];
+        }
+    }
+
+    console.log("Mediana: " + ej12ArrMediana);
+    console.log("Moda: " + ej12ArrModa);
+}
+
+//Ejercicio 14 Checks if a number is a power of 2
+function ejercicio14() {
+    let ej14 = 64;
+    let acum = 2;
+
+    for(let i = 0; i < ej14; i++) {
+        if (ej14 == acum) {
+            console.log("Es pontencia de 2");
+            break;
+        } else if (ej14 < acum) {
+            console.log("No es potencia de 2");
+            break;
+        } else {
+            acum *= 2;
+        }
+    }
+}
+
+ejercicio1();
+ejercicio2();
+ejercicio4();
+ejercicio6();
+ejercicio8();
+ejercicio10();
+ejercicio12();
+ejercicio14();
