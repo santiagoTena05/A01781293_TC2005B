@@ -1,7 +1,7 @@
 /*
-Detect when the ball enters the basket
+Detects when the game object of the coins is triggered
 
-Author: Santiago Tena
+Author: Santiago Tena & Domingo Mora
 */
 
 using System.Collections;

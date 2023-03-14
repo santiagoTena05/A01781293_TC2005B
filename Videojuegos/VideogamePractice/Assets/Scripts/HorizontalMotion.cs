@@ -1,7 +1,7 @@
 /*
-Move a GameObject horizontally back and forth using the arrow keys or A and D.
+Move a GameObject horizontally and vertically with AWSD or arrow keys
 
-Santiago Tena
+Author Santiago Tena & Domingo Mora
 */
 
 using System.Collections;
@@ -25,11 +25,13 @@ public class HorizontalMotion : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // two types of motions used in our game
         move.x = Input.GetAxis("Horizontal");
         move.y = Input.GetAxis("Vertical");
 
         //Debug.Log("X motion: " + move.x);
         
+        // Movements in a certain range move a certain direction:: Negative in horizontal moves right
         //Limit the motion to a specifi range of coordinates
         if (transform.position.x < -limit && move.x < 0)
         {

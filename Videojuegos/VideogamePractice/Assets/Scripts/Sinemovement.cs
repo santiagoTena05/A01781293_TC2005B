@@ -1,3 +1,8 @@
+/*
+Motion specifications for mobs
+Santiago Tena & Domingo Moras
+*/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

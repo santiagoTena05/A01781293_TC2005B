@@ -1,8 +1,8 @@
 /*
 Keep track of the score during the game.
-
-Santiago Tena
+Santiago Tena & Domingo Mora
 */
+
 
 using System.Collections;
 using System.Collections.Generic;
@@ -28,10 +28,12 @@ public class Score : MonoBehaviour
 
     public void AddPoints(int amount)
     {
+        // Here we initialize a counter for each time the character comes in direct contact with a coin: This contact is specified by a collider
         score += amount;
         tmpObj.text = "Score: " + score;
         Debug.Log("New Score: " + score);
 
+        //The instruction below indicates that when the score specified in Unity is reached, the game is over
         if (score >= maxScore)
         {
             // Finish();
