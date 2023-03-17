@@ -298,6 +298,7 @@ console.log("test");
 let array = [1, 21, 33, 4, 53, 16];
 let strings = ["luffy", "blackbeard", "shanks", "law", "bigmom", "whitebeard"];
 let stringsb = ["luffy", "blackbeard", "luffy", "shanks", "law", "luffy", "bigmom", "luffy", "whitebeard"];
+
 function1 ("abacddbec");
 function2 (array);
 function3 (array);
