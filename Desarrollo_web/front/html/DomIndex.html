@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="../css/eventos_dom.css">
+    <script type="module" src="../js/eventos_dom.js"></script>
+    <title>Eventos y Dom</title>
+</head>
+
+<body>
+    <h1>Eventos y DOM y ChatGPT</h1>
+
+    <div class="container">
+        <h2>Instrucciones</h2>
+        <p>Utiliza ChatGPT y github Copilot para resolver la siguiente actividad. Antes de hacer los ejercicios, contesta las siguientes preguntas. Pregúntale a ChatGPT las preguntas, y verifica que lo que haya generado es correcto. Cuando sea necesario, agrega un ejemplo de código. Incluye una fuente que valide o invalide lo que generó. Agrega elementos de HTML con tus respuestas. (<b>Protip</b>: usa ChatGPT para que las respuestas las ponga directamente en elementos de html.)</p>
+
+        <p>Terminando las preguntas y los ejercicios, documenta tu experiencia con las herramientas en la sección de conclusiones. </p>
+    </div>
+
+    <div class="container">
+        <h3>Preguntas</h3>
+        <ol>
+            <li>¿Qué es el DOM?</li>
+            <h4>ChatGPT:</h4>
+            <p>El DOM (Document Object Model) es una interfaz de programación de aplicaciones (API) para documentos HTML y XML. </p>
+            <h4>Copilot:</h4>
+            <p>// r: El DOM es la representación de un documento HTML en forma de árbol de nodos.</p>
+            <li>¿Qué es un nodo?</li>
+            <h4>ChatGPT:</h4>
+            <p>En el contexto de JavaScript y el modelo de objeto de documento (DOM), un nodo es un objeto que representa un elemento individual en la estructura de un documento HTML o XML.
+                Existen diferentes tipos de nodos en el DOM, como nodos de elemento (representan las etiquetas HTML/XML), nodos de texto (representan el contenido de texto dentro de un elemento) y nodos de atributo (representan los atributos de un elemento).
+                Los nodos en el DOM se organizan en una estructura de árbol, donde cada nodo puede tener uno o varios nodos secundarios (hijos) y un nodo padre. Esta estructura de árbol se utiliza para representar la estructura jerárquica de un documento HTML o XML.
+                El acceso y manipulación de nodos en el DOM es una parte fundamental de la programación web con JavaScript, ya que permite la creación dinámica de contenido y la interacción con el usuario a través de eventos y acciones del usuario.</p>
+            <h4>Copilot:</h4>
+            <p>// r: Un nodo es un elemento del árbol DOM.</p>
+            <li>¿Cómo se accede a un elemento del DOM?</li>
+            <h4>ChatGPT:</h4>
+            <p>Para acceder a un elemento del DOM (Document Object Model) en JavaScript, se puede utilizar el método document.querySelector() o document.getElementById().</p>
+            <h4>Copilot:</h4>
+            <p>// r: Mediante el método document.getElementById('id').</p>
+            <li>¿Cómo se modifica un elemento del DOM?</li>
+            <h4>ChatGPT:</h4>
+            <p>Para modificar un elemento del DOM en JavaScript, se puede utilizar la propiedad innerHTML para modificar el contenido HTML del elemento, o la propiedad textContent para modificar el texto del elemento.            </p>
+            <h4>Copilot:</h4>
+            <p>// r: Mediante el método document.getElementById('id').innerHTML = 'nuevo valor';</p>
+            <li>¿Cuál es la diferencia entre getElementby* y querySelector*?</li>
+            <h4>ChatGPT:</h4>
+            <p>La principal diferencia entre los métodos getElementby* y querySelector* es que el primero utiliza la sintaxis de acceso por nombre de etiqueta, clase o ID, mientras que el segundo utiliza selectores CSS para seleccionar elementos del DOM.<br>
+                getElementby* incluye los siguientes métodos:<br>                
+                getElementById(): devuelve el elemento con el ID especificado.
+                getElementsByClassName(): devuelve una lista de elementos con la clase especificada.
+                getElementsByTagName(): devuelve una lista de elementos con el nombre de etiqueta especificado.</p>
+            <h4>Copilot:</h4>
+            <p>// r: getElementby* devuelve un elemento, querySelector devuelve una lista de elementos.</p>
+            <li>¿Qué es un evento?</li>
+            <h4>ChatGPT:</h4>
+            <p>En JavaScript, un evento es cualquier acción que ocurre en una página web, como hacer clic en un botón, mover el mouse, presionar una tecla, cargar una página, entre otros. Los eventos son fundamentales para la programación web, ya que permiten que el usuario interactúe con la página y que la página responda a esas interacciones.</p>
+            <h4>Copilot:</h4>
+            <p>// r: Es una acción que se produce en el navegador, como por ejemplo el click de un botón.</p>
+            <li>¿Qué es un listener?</li>
+            <h4>ChatGPT:</h4>
+            <p>En JavaScript, un listener o "escuchador" es una función que se encarga de esperar y responder a un evento específico. Un listener está vinculado a un elemento HTML y se activa cuando ocurre un evento en ese elemento.
+                Para agregar un listener a un elemento HTML, se utiliza el método addEventListener que acepta tres argumentos: el tipo de evento que se desea escuchar (como 'click', 'mouseover', 'submit', etc.), la función que se debe ejecutar cuando ocurra el evento y un valor booleano opcional que indica si se debe usar la captura de eventos o la propagación de eventos.</p>
+            <h4>Copilot:</h4>
+            <p>// r: Es una función que se ejecuta cuando se produce un evento.</p>
+            <li>¿Qué es un callback?</li>
+            <h4>ChatGPT:</h4>
+            <p>En JavaScript, un callback es una función que se pasa como argumento a otra función y que se ejecuta cuando la función original ha terminado de procesar su trabajo. El callback se utiliza para notificar que se ha completado una tarea y para proporcionar el resultado de esa tarea.</p>
+            <h4>Copilot:</h4>
+            <p>// r: Es una función que se pasa como parámetro a otra función.</p>
+            <li>¿Qué es un objeto de evento?</li>
+            <h4>ChatGPT:</h4>
+            <p>En JavaScript, un objeto de evento es un objeto que contiene información sobre un evento que acaba de ocurrir en la página web. Cuando un evento ocurre en un elemento HTML, como hacer clic en un botón, el navegador crea un objeto de evento que contiene información sobre el evento, como qué tipo de evento fue, qué elemento HTML lo provocó, la posición del mouse, entre otros.</p>
+            <h4>Copilot:</h4>
+            <p>// r: Es un objeto que se pasa como parámetro a la función callback.</p>
+        </ol>
+    </div>
+
+    <h3>Ejercicios de código</h3>
+    <p>Usa ChatGPT y copilot para resolver los ejercicios. Por cada ejercicio, pídele a ChatGPT o a copilot que te genere los comentarios. Verifica los resultados antes de subirlos a tu repo.</p>
+
+    <div class="container">
+        <p>1. Modifica el siguiente elemento para mostrar la posición del mouse en el documento:</p>
+        <p id="mousePosition">Posición del mouse: </p>
+
+
+        <script>
+        document.addEventListener("mousemove", function(event) {
+            var x = event.clientX;
+            var y = event.clientY;
+            var mousePositionElement = document.getElementById("mousePosition");
+            mousePositionElement.innerHTML = "Posición del mouse: " + x + ", " + y;
+        });
+        </script>
+    </div>
+
+    <div class="container">
+        <p>2. Al dar click al siguiente botón, obtén el nombre y apellido de las siguientes cajas de texto, y agrega, después del botón, un elemento que tenga el nombre completo.</p>
+        <form id="form1">
+            First name: <input id="form-fname" type="text" name="fname" ><br>
+            Last name: <input id="form-lname" type="text" name="lname" ><br><br>
+        <input id="form1-submit" type="submit" value="Submit">
+        </form>
+        <script>
+            const form = document.getElementById("form1");
+            const submitBtn = document.getElementById("form1-submit");
+
+            submitBtn.addEventListener("click", (event) => {
+            event.preventDefault();
+
+            const firstName = document.getElementById("form-fname").value;
+            const lastName = document.getElementById("form-lname").value;
+
+            const fullName = document.createElement("p");
+            fullName.textContent = `Nombre Completo: ${firstName} ${lastName}`;
+
+            form.appendChild(fullName);
+            });
+        </script>
+    </div>
+
+    <div class="container">
+        <p>3. Agrega el código para agregar una fila, o una columna, a la siguiente tabla al dar click al botón correspondiente.</p>
+        <table id="sampleTable">
+            <tr>
+                <td>Row 1 column 1</td>
+                <td>Row 1 column 2</td>
+            </tr>
+            <tr>
+                <td>Row 2 column 1</td>
+                <td>Row 2 column 2</td>
+            </tr>
+        </table><br>
+        <input id="btn-insert-r" type="button" value="Insert row">
+        <input id="btn-insert-c" type="button" value="Insert column">
+    </div>
+
+    <div class="container">
+        <p>4. Incluye dos cajas de input, para solicitar al usuario la posición de la fila y columna de la siguiente tabla, y otra para solicitar un texto. Al apretar el botón, actualiza el contenido de esa tabla en la posición que solicitaste, con la cadena de texto que solicitaste.</p>
+        <table id="myTable">
+            <tr>
+                <td>Row1 cell1</td>
+                <td>Row1 cell2</td>
+                <td>Row1 cell3</td>
+            </tr>
+            <tr>
+                <td>Row2 cell1</td>
+                <td>Row2 cell2</td>
+                <td>Row2 cell3</td>
+            </tr>
+            <tr>
+                <td>Row3 cell1</td>
+                <td>Row3 cell2</td>
+                <td>Row3 cell3</td>
+            </tr>
+            </table><form><br>
+            <input id="rowIndex" type="text" placeholder="Row Index">
+            <input id="colIndex" type="text" placeholder="Col Index">
+            <input id="newValue" type="text" placeholder="New Value">
+            <input id="btn-change" type="button" value="Change content">
+    </div>
+
+    <div class="container">
+        <p>5. Agrega el código para quitar o agregar elementos a la lista de opciones. Los colores pueden ser aleatorios.</p>
+        <form>
+            <select id="colorSelect">
+                <option>Red</option>
+                <option>Green</option>
+                <option>White</option>
+                <option>Black</option>
+            </select>
+            <input id="btn-add-color" type="button" value="Add color">
+            <input id="btn-rmv-color" type="button" value="Remove color">
+        </form>
+    </div>
+
+    <div class="container">
+        <p>6. Al poner el mouse encima de la siguiente imagen, genera dos números aleatorios entre 300 y 600 para el width y height de una imagen. Reemplaza la imagen de placeholder por otra similar con el tamaño random que generaste. El evento solo se dispara cuando el mouse entra en la imagen.</p>
+        <img id="imagenGato" src="http://placekitten.com/200/300">
+    </div>
+
+    <div class="container">
+        <h2>Conclusiones</h2>
+
+        <h4>Experiencia general</h4>
+        <h4>¿Cuándo y para qué usarías ChatGPT y cuándo Copilot?</h4>
+        <h4>Ventajas de usar AI para programar</h4>
+        <h4>Desventajas de usar AI para programar</h4>
+    </div>
+
+</body>
+</html>
