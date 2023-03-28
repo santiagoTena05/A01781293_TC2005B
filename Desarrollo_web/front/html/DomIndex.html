@@ -101,22 +101,6 @@
             Last name: <input id="form-lname" type="text" name="lname" ><br><br>
         <input id="form1-submit" type="submit" value="Submit">
         </form>
-        <script>
-            const form = document.getElementById("form1");
-            const submitBtn = document.getElementById("form1-submit");
-
-            submitBtn.addEventListener("click", (event) => {
-            event.preventDefault();
-
-            const firstName = document.getElementById("form-fname").value;
-            const lastName = document.getElementById("form-lname").value;
-
-            const fullName = document.createElement("p");
-            fullName.textContent = `Nombre Completo: ${firstName} ${lastName}`;
-
-            form.appendChild(fullName);
-            });
-        </script>
     </div>
 
     <div class="container">
@@ -181,8 +165,9 @@
 
     <div class="container">
         <h2>Conclusiones</h2>
-
+        <p>ChatGPI es una maravilla</p>
         <h4>Experiencia general</h4>
+        <p>Al principio me costó trabajo que chatGPT me generará buenas respuestas, pero una vez que vi bien cómo preguntarle, todos los problemas me los dió a la primera.</p>
         <h4>¿Cuándo y para qué usarías ChatGPT y cuándo Copilot?</h4>
         <h4>Ventajas de usar AI para programar</h4>
         <h4>Desventajas de usar AI para programar</h4>
